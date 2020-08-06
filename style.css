@@ -1,0 +1,76 @@
+/* style.css */
+
+* {
+  box-sizing: border-box;
+  }
+
+/**/
+body {
+  background-color:;
+}
+
+body > header,
+body > footer {
+  background-color:;
+}
+
+/* Style image*/
+#intro img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* Style headers */
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+/* Style regular text */
+p, li {
+
+}
+
+footer p {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Style Links: link, visited, hover, active */
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+/* Structure */
+
+article {
+
+}
+
+hr {
+
+}
