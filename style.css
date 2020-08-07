@@ -1,12 +1,12 @@
 /* style.css */
-
 * {
   box-sizing: border-box;
   }
 
 /* Set background colors and padding*/
 body {
-  background: #c4e3ff;
+  margin: 0px;
+  background: #e0f1ff;
 }
 
 body > header,
@@ -16,10 +16,6 @@ body > footer {
 }
 
 /* Structure */
-.center {
-  margin: auto;
-}
-
 main {
   margin: auto;
   width: 50%;
@@ -38,6 +34,57 @@ hr {
   border-radius: 12%;
 }
 
+/* Style headers and footer */
+h1, h2, h3, footer p {
+  font-family: Arial, "Courier New", monospace;
+  text-align: center;
+  color: #37718E;
+}
+
+h1 {
+  font-size: 33px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #254E70;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+/* Style regular text */
+p, li {
+  font-family: Arial, "Courier New", monospace;
+  font-size: 12px;
+  color: #031730;;
+}
+
+/* Style Links: link, visited, hover, active */
+a, a:link {
+  font-weight: bold;
+  color: #124494;
+  text-decoration: none;
+}
+
+a:visited {
+  color: ##3b4547;
+}
+
+a:hover {
+  color: #5887e0;
+}
+
+a:active {
+  color: #3f545e;
+}
+
+/* Style center class to center content */
+.center {
+  margin: auto;
+}
+
 /* Style image*/
 #intro img {
   display: block;
@@ -49,57 +96,4 @@ hr {
   aspect-ratio: attr(width) / attr(height);
   border: 3px #ffffff solid;
   border-radius: 3%;
-}
-
-/* Style headers */
-h1, h2, h3, footer p {
-  font-family: Arial, "Courier New", monospace;
-  text-align: center;
-}
-
-h1 {
-  font-size: 33px;
-  color: #37718E;
-}
-
-h2 {
-  font-size: 24px;
-  color: #254E70;
-}
-
-h3 {
-  font-size: 14px;
-  color: #37718E;
-}
-
-/* Style regular text */
-p, li {
-  font-family: Arial, "Courier New", monospace;
-  font-size: 12px;
-  color: #031730;;
-}
-
-footer p {
-  color: #37718E;
-}
-
-/* Style Links: link, visited, hover, active */
-a {
-  font-weight: bold;
-}
-
-a:link {
-  color: #0355E2;
-}
-
-a:visited {
-  color: #0353A4;
-}
-
-a:hover {
-  color: #B9D7F2;
-}
-
-a:active {
-  color: #071A40;
 }
