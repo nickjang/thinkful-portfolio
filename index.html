@@ -1,64 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Nick Jang | Software Development Student</title>
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
-    <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <header>
-      <h1>Nick Jang</h1>
-      <h3>Software Development Student</h3>
-    </header>
-    <main>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick Jang | Software Development Student</title>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <h1>Nick Jang</h1>
+    <h3>Software Development Student</h3>
+  </header>
+  <main>
+    <div class="wrapper">
       <!--Introduction-->
       <article id="intro">
-        <div class="center">
-          <img src="images/nick-jang.jpg" alt="Nick Jang">
+        <div class="group">
+          <div class="item">
+            <div class="box-with-border">
+              <h2>Hi! I'm Nick Jang</h2>
+              <p> I am a student at Thinkful, studying web development, and I live in
+                Philadelphia, Pennsylvania. </p>
+              <p>As a former fast food worker, things need to be in proper place, and
+                there is always room for learning.
+              </p>
+              <p>Please feel free to look at this website and
+                <a href="#contact">contact</a> me.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/nick-jang.jpg" alt="Nick Jang">
+          </div>
         </div>
-        <h2>Hi! I'm Nick Jang</h2>
-        <p>I am a student at Thinkful, studying web development, and I live in
-          Philadelphia, Pennsylvania. </p>
-        <p>As a former fast food worker:</p>
-        <ul>
-          <li>Things need to be in proper place</li>
-          <li>There is room for learning</li>
-        </ul>
-        <p>Please feel free to look at this website and/or
-          <a href="#contact">contact me.</a> <!--Link to contact section-->
-        </p>
       </article>
-      <hr>
+    </div>
+    <div class="wrapper">
       <!--About description-->
-      <article id="about">
-        <h2>About Nick</h2>
-        <p>For a short while, I worked at a fast food restaurant. I got to
-          experience working in a real kitchen, although the equipment was for
-          fast food. While cooking is fun, I also realized that I enjoy making
-          something with code. I once wrote a script to organize files from a
-          particular software!</p>
-        <!--Link to Thinkful in new tab-->
-        <p>As a student at <a href="https://www.thinkful.com" target="_blank">
-          Thinkful</a>, I am learning about software development!</p>
-        <p>If you're looking to hire a new developer (or are looking for a
-          partner for a hackathon) please reach out! I enjoy working with other
-          developers to build great software.</p>
+      <article id="about" class="bg-block">
+        <div class="group">
+          <div class="item">
+            <h2>About</h2>
+            <p>For a short while, I worked at a fast food restaurant. I got to
+              experience working in a real kitchen, although the equipment was for
+              fast food. While cooking is fun, I also realized that I enjoy coding.
+              Making things is so fun! I once wrote a script to organize files from a
+              particular software. It was one of my first experiences in a professional
+              environment. Developing tools was a pleasure.</p>
+            <!--Link to Thinkful in new tab-->
+            <p>As a student at <a href="https://www.thinkful.com" target="_blank">
+                Thinkful</a>, I am learning about web development and continuing my
+              education in software engineering! Before Thinkful, I had a short
+              background in computer science and computer graphics.</p>
+            <p>If you're looking to hire a new developer (or are looking for a
+              partner for a hackathon) please reach out! I enjoy working with other
+              developers to build great software.</p>
+          </div>
+          <div class="item">
+            <img src="images/fast-food.jpg" alt="An empty kitchen.">
+          </div>
+        </div>
       </article>
-      <hr>
-      <!--Contact Links in new tabs-->
-      <article id="contact">
-        <h2>Contact Nick</h2>
-        <p>Please feel free to contact or connect with me:</p>
-        <ol>
-          <li><a href="https://www.linkedin.com/in/nick-jang-5473a3181/" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/nickjang" target="_blank">GitHub</a></li>
-        </ol>
+    </div>
+    <div class="wrapper">
+      <!--Portfolio-->
+      <article id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="group">
+          <div class="item center">
+            <img src="images/white-square.jpg" alt="white square">
+            <h3>Quiz App</h3>
+            <p>For a short while, I worked at a fast food restaurant. I got to
+              experience working in a real kitchen, although the equipment was for
+              fast food. While cooking is fun, I also realized that I enjoy making
+              something with code. I once wrote a script to organize files from a
+              particular software!</p>
+          </div>
+          <div class="item center">
+            <img src="images/white-square.jpg" alt="white square">
+            <h3>Bookmark App</h3>
+            <p>For a short while, I worked at a fast food restaurant. I got to
+              experience working in a real kitchen, although the equipment was for
+              fast food. While cooking is fun, I also realized that I enjoy making
+              something with code. I once wrote a script to organize files from a
+              particular software!</p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="item center">
+            <img src="images/white-square.jpg" alt="white square">
+            <h3>Pet Appointment App</h3>
+            <p>For a short while, I worked at a fast food restaurant. I got to
+              experience working in a real kitchen, although the equipment was for
+              fast food. While cooking is fun, I also realized that I enjoy making
+              something with code. I once wrote a script to organize files from a
+              particular software!</p>
+          </div>
+          <div class="item center">
+            <img src="images/white-square.jpg" alt="white square">
+            <h3>Team Project App</h3>
+            <p>For a short while, I worked at a fast food restaurant. I got to
+              experience working in a real kitchen, although the equipment was for
+              fast food. While cooking is fun, I also realized that I enjoy making
+              something with code. I once wrote a script to organize files from a
+              particular software!</p>
+          </div>
+        </div>
       </article>
-    </main>
-    <footer>
-      <p>&#169; Nick Jang</p>
-    </footer>
-  </body>
+      <div class="wrapper">
+        <hr>
+        <!--Contact Links in new tabs-->
+        <div class="wrapper">
+          <article id="contact">
+            <div class="group">
+              <div class="item">
+                <h2>Contact</h2>
+                <p>Please feel free to contact or connect with me:</p>
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/nick-jang-5473a3181/" target="_blank">LinkedIn</a></li>
+                  <li><a href="https://github.com/nickjang" target="_blank">GitHub</a></li>
+                  <li><a href="tel:9175655474">917.565.5474</a></li>
+                  <li><a href="mailto:nickjang@alumni.upenn.edu">nickjang@alumni.upenn.edu</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        </article>
+        <div class="wrapper">
+  </main>
+  <footer>
+    <p>&#169; Nick Jang</p>
+  </footer>
+</body>
+
 </html>
