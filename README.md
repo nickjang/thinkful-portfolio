@@ -1,4 +1,4 @@
-# Thinkful Prep Course Portfolio
+# Thinkful Portfolio
 
 A portfolio webpage involving various topics learned in the HTML/CSS fundamentals module of the Prep course for Engineering Immersion at Thinkful.
 
