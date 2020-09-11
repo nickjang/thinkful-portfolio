@@ -53,11 +53,11 @@ h1, h2, h3, footer p {
 }
 
 h1 {
-  font-size: 33px;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 19px;
+  font-size: 24px;
   color: #254E70;
   margin-top: 0px;
 }
@@ -66,9 +66,13 @@ h3 {
   font-size: 14px;
 }
 
+p {
+  line-height: 1.5em;
+}
+
 p, ul, form label, form button {
   font-family: Arial, "Courier New", monospace;
-  font-size: 12px;
+  font-size: 14px;
   color: #031730;
 }
 
@@ -132,7 +136,7 @@ header nav ul li:last-child a {
   margin-top: 32px;
 }
 
-#portfolio .box-with-border {
+#portfolio .box-with-border, #services {
   margin-top: 0px;
   padding-top: 0px;
 }
@@ -184,10 +188,6 @@ header nav ul li:last-child a {
   text-align: center;
 }
 
-#contact .box-with-border {
-  max-width: none;
-}
-
 /* ---  Contact Form Design --- */
 form input, 
 form textarea {
@@ -200,7 +200,7 @@ form textarea {
 }
 
 form input[type=text], form input[type=email], form textarea {
-  font-size: 12px;
+  font-size: 14px;
   width: 100%;
   padding: 3px;
   margin: 8px 0;
@@ -244,7 +244,7 @@ form label, form button {
   }
 
   header nav ul li a {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   /* Link */
@@ -263,7 +263,6 @@ form label, form button {
   }
 
   .box-with-border {
-    width: 100%;
     padding: 12px;
   }
 
@@ -282,6 +281,7 @@ form label, form button {
 
   #about img {
     display: block;
+    
   }
 
   #portfolio hr {
@@ -290,5 +290,14 @@ form label, form button {
 
   #about .box-with-border {
     border-color: #e0f1ff;
+  }
+
+  #services, #contact .box-with-border{
+    max-width: none;
+  }
+
+  #services.box-with-border {
+    margin: 10px;
+    padding-top: 12px;
   }
 }
