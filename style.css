@@ -1,23 +1,28 @@
 /* style.css */
+:root {
+  --color-light-blue: #e0f1ff;
+}
+
 * {
   box-sizing: border-box;
 }
 
-html,body
-{
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 /* Set background colors and padding*/
 body {
-  background: #e0f1ff;
+  background: var(--color-light-blue);
 }
 
-header, footer {
+header,
+footer {
   background: #ffffff;
   padding: 3px 10px 3px;
 }
@@ -34,7 +39,7 @@ article {
 img {
   width: 100%;
   padding: 10px;
-  border-radius: 7%;
+  border-radius: 20px;
 }
 
 hr {
@@ -46,10 +51,13 @@ hr {
 }
 
 /* Text */
-h1, h2, h3, footer p {
+h1,
+h2,
+h3,
+footer p {
   font-family: Arial, "Courier New", monospace;
   text-align: center;
-  color: #37718E;
+  color: #37718e;
 }
 
 h1 {
@@ -58,7 +66,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  color: #254E70;
+  color: #254e70;
   margin-top: 0px;
 }
 
@@ -70,24 +78,19 @@ p {
   line-height: 1.5em;
 }
 
-p, ul, form label, form button {
+p,
+ul,
+form label,
+form button {
   font-family: Arial, "Courier New", monospace;
   font-size: 14px;
   color: #031730;
 }
 
-p, ul, form {
+p,
+ul,
+form {
   text-align: left;
-}
-
-a:link {
-  font-weight: bold;
-  color: #004ec9;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #3c5e7d;
 }
 
 /* Header */
@@ -99,7 +102,7 @@ header h1 {
 header nav {
   display: flex;
   justify-content: center;
-  }
+}
 
 header nav ul {
   display: flex;
@@ -116,7 +119,9 @@ header nav ul li:last-child a {
 }
 
 /* Spacing */
-#intro img, header, #contact .item section {
+#intro img,
+header,
+#contact .item section {
   margin-bottom: 10px;
 }
 
@@ -128,18 +133,34 @@ header nav ul li:last-child a {
   padding: 0px;
 }
 
-#about p, #portfolio p {
-  text-indent: 12px;
-}
-
 #portfolio h2 {
   margin-top: 32px;
 }
 
-#portfolio .box-with-border, #services {
+#portfolio .box-with-border,
+#services {
   margin-top: 0px;
   padding-top: 0px;
 }
+
+/* Link */
+  a:link {
+    font-weight: bold;
+    color: #004ec9;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #004ec9;
+  }
+
+  a:hover {
+    color: #647ca8;
+  }
+
+  a:active {
+    color: #0052a3;
+  }
 
 /* Other classes */
 .bg-block {
@@ -151,7 +172,7 @@ header nav ul li:last-child a {
   padding: 10px;
   max-width: 400px;
   border: 3px #ffffff solid;
-  border-radius: 3%;
+  border-radius: 12px;
 }
 
 .center {
@@ -162,17 +183,22 @@ header nav ul li:last-child a {
   list-style: none;
 }
 
+.mb-48 {
+  margin-bottom: 48px;
+}
+
 /* ids */
 #intro img {
   max-width: 150px;
 }
 
-#about img { 
+#about img {
   display: none;
 }
 
-#contact-list .box-with-border, #portfolio .box-with-border {
-  border-color: #e0f1ff;
+#contact-list .box-with-border,
+#portfolio .box-with-border {
+  border-color: var(--color-light-blue);
 }
 
 /* Group and items */
@@ -189,7 +215,7 @@ header nav ul li:last-child a {
 }
 
 /* ---  Contact Form Design --- */
-form input, 
+form input,
 form textarea {
   width: 100%;
   margin-bottom: 20px;
@@ -199,7 +225,9 @@ form textarea {
   height: 160px;
 }
 
-form input[type=text], form input[type=email], form textarea {
+form input[type="text"],
+form input[type="email"],
+form textarea {
   font-size: 14px;
   width: 100%;
   padding: 3px;
@@ -207,9 +235,11 @@ form input[type=text], form input[type=email], form textarea {
   border: none;
 }
 
-form input[type=text]:focus, form input[type=email]:focus, 
-form textarea:focus, form button:focus {
-  outline-color: #254E70;
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus,
+form button:focus {
+  outline-color: #254e70;
 }
 
 form button {
@@ -220,12 +250,13 @@ form button {
   display: inline-block;
 }
 
-form label, form button {
-  color: #254E70;
+form label,
+form button {
+  color: #254e70;
 }
 
 /* Media Queries */
-@media all and (min-width: 800px) {
+@media all and (min-width: 970px) {
   /* Header */
   header {
     display: flex;
@@ -247,19 +278,11 @@ form label, form button {
     font-size: 17px;
   }
 
-  /* Link */
-  a:hover {
-    color: #647ca8;
-  }
-
-  a:active {
-    color: #0052a3;
-  }
-
   /* Classes */
   .group {
     flex-direction: row;
-    margin: 48px;
+    margin: 48px auto;
+    max-width: 1000px;
   }
 
   .box-with-border {
@@ -267,14 +290,24 @@ form label, form button {
   }
 
   /* ids */
+  #contact-form {
+    margin-right: 30%;
+    min-width: 20rem;
+  }
+
+  #services {
+    padding-top: 12px;
+  }
+
   #portfolio h2 {
     margin-top: 48px;
   }
 
-  #contact-list h2, #contact-list p{
+  #contact-list h2,
+  #contact-list p {
     text-align: right;
   }
-  
+
   #intro img {
     max-width: 300px;
   }
@@ -289,15 +322,21 @@ form label, form button {
   }
 
   #about .box-with-border {
-    border-color: #e0f1ff;
+    border-color: var(--color-light-blue);
   }
 
-  #services, #contact .box-with-border{
+  #about img,
+  #services {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact .box-with-border {
     max-width: none;
   }
 
   #services.box-with-border {
-    margin: 10px;
-    padding-top: 12px;
+    margin-top: 12px;
   }
 }
