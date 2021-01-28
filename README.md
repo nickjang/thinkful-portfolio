@@ -1,11 +1,15 @@
 # Thinkful Portfolio
 
-A portfolio webpage involving various topics learned in the HTML/CSS fundamentals module of the Prep course for Engineering Immersion at Thinkful.
+A portfolio page containing some information about me and a portfolio of projects built with React, Node.js, Express, PostgreSQL, JavaScript, HTML, and CSS.
 
-## About me
+## Table of contents
+- [Technologies](#technologies)
+- [Acknowledgments](#acknowledgments)
 
-* [GitHub Profile](https://github.com/nickjang)
+## Technologies
 
-## Special Thanks
+This application was written using HTML and CSS.
 
-Special thanks to Thinkful.
+## Acknowledgments
+
+Thank you to [Thinkful](https://thinkful.com/), where this portfolio was completed.
