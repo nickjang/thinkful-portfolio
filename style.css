@@ -65,16 +65,17 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   color: #254e70;
   margin-top: 0px;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 p {
+  font-size: 14px;
   line-height: 1.5em;
 }
 
