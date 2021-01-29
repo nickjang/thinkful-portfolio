@@ -24,7 +24,7 @@ body {
 header,
 footer {
   background: #ffffff;
-  padding: 3px 10px 3px;
+  padding: 3px 1rem 3px;
 }
 
 /* Structure */
@@ -33,19 +33,18 @@ main {
 }
 
 article {
-  padding: 12px;
+  padding: 1rem;
 }
 
 img {
   width: 100%;
-  padding: 10px;
   border-radius: 20px;
 }
 
 hr {
   color: #ffffff;
   background-color: #ffffff;
-  width: 75vw;
+  width: 70vw;
   border-style: solid;
   margin: auto;
 }
@@ -120,22 +119,29 @@ header nav ul li:last-child a {
 }
 
 /* Spacing */
-#intro img,
-header,
 #contact .item section {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 #portfolio hr {
-  margin-bottom: 24px;
+  margin-bottom: 2rem;
 }
 
 #portfolio {
-  padding: 0px;
+  margin-bottom: 1rem;
+  padding-bottom: 0;
 }
 
 #portfolio h2 {
-  margin-top: 32px;
+  margin: 1rem auto 2rem auto;
+}
+
+.box-with-border {
+  margin: auto;
+  padding: 1rem;
+  max-width: 450px;
+  border: 3px #ffffff solid;
+  border-radius: 1rem;
 }
 
 #portfolio .box-with-border,
@@ -168,14 +174,6 @@ header,
   background-color: #ffffff;
 }
 
-.box-with-border {
-  margin: auto;
-  padding: 10px;
-  max-width: 400px;
-  border: 3px #ffffff solid;
-  border-radius: 12px;
-}
-
 .center {
   text-align: center;
 }
@@ -184,17 +182,23 @@ header,
   list-style: none;
 }
 
-.mb-48 {
-  margin-bottom: 48px;
+/* ids */
+#intro {
+  margin: 2rem auto;
 }
 
-/* ids */
 #intro img {
   max-width: 150px;
+  margin-top: 1rem;
+}
+
+#intro .box-with-border {
+  margin: 0;
 }
 
 #about img {
-  display: none;
+  max-width: 450px;
+  margin-bottom: 1rem;
 }
 
 #contact-list .box-with-border,
@@ -246,7 +250,7 @@ form button:focus {
 form button {
   background-color: #fff;
   border: none;
-  padding: 8px 12px;
+  padding: 8px 1rem;
   text-decoration: none;
   display: inline-block;
 }
@@ -262,7 +266,6 @@ form button {
   header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
     padding: 0 30px;
   }
 
@@ -287,35 +290,35 @@ form button {
   }
 
   .box-with-border {
-    padding: 12px;
+    padding: 2rem;
   }
 
   /* ids */
+  #intro img {
+    margin: 0 0 0 3rem;
+    max-width: 270px;
+  }
+
+  #portfolio h2 {
+    margin-top: 4rem;
+  }
+
+  #portfolio .group {
+    margin-bottom: 0.5rem;
+  }
+  
+  #services {
+    padding-top: 2rem;
+  }
+  
   #contact-form {
     margin-right: 30%;
     min-width: 20rem;
   }
 
-  #services {
-    padding-top: 12px;
-  }
-
-  #portfolio h2 {
-    margin-top: 48px;
-  }
-
   #contact-list h2,
   #contact-list p {
     text-align: right;
-  }
-
-  #intro img {
-    max-width: 300px;
-  }
-
-  #about img {
-    display: block;
-    
   }
 
   #portfolio hr {
@@ -328,7 +331,6 @@ form button {
 
   #about img,
   #services {
-    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -338,6 +340,6 @@ form button {
   }
 
   #services.box-with-border {
-    margin-top: 12px;
+    margin-top: 1rem;
   }
 }
